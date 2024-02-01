@@ -15,7 +15,8 @@ def button_click():
     showdf=True
 
 st.button(label='Hit me', on_click=button_click, )
-if (showdf) df
+if (showdf): 
+  df
 #st.data_editor('Edit data', data)
 st.checkbox('Check me out')
 st.radio('Pick one:', ['nose','ear'])
