@@ -14,7 +14,7 @@ showdf = False
 def button_click():
     showdf=True
 
-st.button(label='Hit me', on_click=button_click, )
+st.button(label='Hit me', on_click=button_click)
 if (showdf): 
   df
 #st.data_editor('Edit data', data)
