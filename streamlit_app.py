@@ -9,11 +9,13 @@ df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
   'second column': [10, 20, 30, 40]
 })
+showdf = False 
 
 def button_click():
-    df
+    showdf=True
 
-st.button('Hit me', on_click=button_click)
+st.button(label='Hit me', on_click=button_click, )
+if (showdf) df
 #st.data_editor('Edit data', data)
 st.checkbox('Check me out')
 st.radio('Pick one:', ['nose','ear'])
@@ -30,4 +32,6 @@ st.file_uploader('File uploader')
 #st.download_button('On the dl', data)
 st.camera_input("一二三,茄子!")
 st.color_picker('Pick a color')
+
+
 
